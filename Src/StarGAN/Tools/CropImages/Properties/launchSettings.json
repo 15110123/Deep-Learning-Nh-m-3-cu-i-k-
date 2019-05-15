@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CropImages": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\Repos\\15110123\\Deep-Learning-Nh-m-3-cu-i-k-\\Src\\StarGAN\\FEIFace\\data\\FEIFace\\train\\Smile"
+    }
+  }
+}
