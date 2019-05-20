@@ -1,3 +1,11 @@
+"""
+Training FEIFace
+--mode train --dataset FEI --image_size 128 --c_dim 2 --sample_dir stargan_fei/samples --log_dir stargan_fei/logs --model_save_dir stargan_fei/models --result_dir stargan_fei/results --resume_iters 9610
+
+Testing FEIFace
+--mode test --dataset FEI --image_size 128 --c_dim 2 --fei_image_dir data/FEIFace/test --sample_dir stargan_fei/samples --log_dir stargan_fei/logs --model_save_dir stargan_fei/models --result_dir stargan_fei/results --test_iters 10530
+"""
+
 import os
 import argparse
 from solver import Solver
