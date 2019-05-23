@@ -49,7 +49,7 @@ class CelebA(data.Dataset):
                 idx = self.attr2idx[attr_name]
                 label.append(values[idx] == '1')
 
-            if (i+1) < 2000:
+            if (i+1) > 360:
                 self.test_dataset.append([filename, label])
             else:
                 self.train_dataset.append([filename, label])

@@ -340,3 +340,6 @@ ASALocalRun/
 healthchecksdb
 /Src/StarGAN/FEIFace/data/FEIFace
 /Src/StarGAN/FEIFace/stargan_fei
+/Src/StarGAN/FEIFace/data/celeba/images
+/Src/StarGAN/FEIFace/data/celeba/images_removed
+/Src/StarGAN/FEIFace/stargan_both/models

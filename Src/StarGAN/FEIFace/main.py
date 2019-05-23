@@ -4,6 +4,9 @@ Training FEIFace
 
 Testing FEIFace
 --mode test --dataset FEI --image_size 128 --c_dim 2 --fei_image_dir data/FEIFace/test --sample_dir stargan_fei/samples --log_dir stargan_fei/logs --model_save_dir stargan_fei/models --result_dir stargan_fei/results --test_iters 10530
+
+Training both
+--mode=train --dataset Both --image_size 128 --c_dim 5 --c2_dim 2 --sample_dir stargan_both/samples --log_dir stargan_both/logs --model_save_dir stargan_both/models --result_dir stargan_both/results --resume_iters 300
 """
 
 import os
