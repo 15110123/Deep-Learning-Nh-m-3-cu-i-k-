@@ -12,7 +12,7 @@
     <Name>FEIFace</Name>
     <RootNamespace>FEIFace</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <CommandLineArguments>--mode test --dataset Both --image_size 128 --c_dim 5 --c2_dim 2 --sample_dir stargan_both/samples --log_dir stargan_both/logs --model_save_dir stargan_both/models --result_dir stargan_both/results --test_iters 13580</CommandLineArguments>
+    <CommandLineArguments>--mode test --dataset CelebA --image_size 128 --c_dim 5 --sample_dir stargan_celeba/samples --log_dir stargan_celeba/logs --model_save_dir stargan_celeba/models --result_dir stargan_celeba/results --selected_attrs Black_Hair Blond_Hair Brown_Hair Male Young</CommandLineArguments>
     <EnableNativeCodeDebugging>True</EnableNativeCodeDebugging>
     <DebugStdLib>False</DebugStdLib>
   </PropertyGroup>
