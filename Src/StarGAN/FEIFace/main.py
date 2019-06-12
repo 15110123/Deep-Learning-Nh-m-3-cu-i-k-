@@ -1,4 +1,7 @@
 """
+Testing CelebA
+--mode test --dataset CelebA --image_size 128 --c_dim 5 --sample_dir stargan_celeba/samples --log_dir stargan_celeba/logs --model_save_dir stargan_celeba/models --result_dir stargan_celeba/results --selected_attrs Black_Hair Blond_Hair Brown_Hair Male Young
+
 Training FEIFace
 --mode train --dataset FEI --image_size 128 --c_dim 2 --sample_dir stargan_fei/samples --log_dir stargan_fei/logs --model_save_dir stargan_fei/models --result_dir stargan_fei/results --resume_iters 9610
 
@@ -7,6 +10,9 @@ Testing FEIFace
 
 Training both
 --mode=train --dataset Both --image_size 128 --c_dim 5 --c2_dim 2 --sample_dir stargan_both/samples --log_dir stargan_both/logs --model_save_dir stargan_both/models --result_dir stargan_both/results --resume_iters 300
+
+Testing both
+--mode test --dataset Both --image_size 128 --c_dim 5 --c2_dim 2 --sample_dir stargan_both/samples --log_dir stargan_both/logs --model_save_dir stargan_both/models --result_dir stargan_both/results --test_iters 13580
 """
 
 import os
@@ -82,7 +88,7 @@ if __name__ == '__main__':
     # Training configuration.
     parser.add_argument('--dataset', type=str, default='CelebA', choices=['CelebA', 'FEI', 'Both'])
     parser.add_argument('--batch_size', type=int, default=16, help='mini-batch size')
-    parser.add_argument('--num_iters', type=int, default=13500, help='number of total iterations for training D')
+    parser.add_argument('--num_iters', type=int, default=20000, help='number of total iterations for training D')
     parser.add_argument('--num_iters_decay', type=int, default=200, help='number of iterations for decaying lr')
     parser.add_argument('--g_lr', type=float, default=0.0001, help='learning rate for G')
     parser.add_argument('--d_lr', type=float, default=0.0001, help='learning rate for D')

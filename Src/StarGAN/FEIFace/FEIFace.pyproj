@@ -12,8 +12,9 @@
     <Name>FEIFace</Name>
     <RootNamespace>FEIFace</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <CommandLineArguments>--mode=train --dataset Both --image_size 128 --c_dim 5 --c2_dim 2 --sample_dir stargan_both/samples --log_dir stargan_both/logs --model_save_dir stargan_both/models --result_dir stargan_both/results</CommandLineArguments>
+    <CommandLineArguments>--mode test --dataset Both --image_size 128 --c_dim 5 --c2_dim 2 --sample_dir stargan_both/samples --log_dir stargan_both/logs --model_save_dir stargan_both/models --result_dir stargan_both/results --test_iters 13580</CommandLineArguments>
     <EnableNativeCodeDebugging>True</EnableNativeCodeDebugging>
+    <DebugStdLib>False</DebugStdLib>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
